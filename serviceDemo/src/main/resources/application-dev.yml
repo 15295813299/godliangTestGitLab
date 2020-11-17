@@ -12,3 +12,7 @@ logging:
   level:
     root: info
     org.springframework: info
+
+
+server:
+  port: 8081
