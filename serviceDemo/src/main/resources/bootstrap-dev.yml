@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: demo
+  cloud:
+    nacos:
+      config:
+        server-addr: 120.27.215.119:8848
+        file-extension: yml
+        shared-dataids: redis.yml,database.yml
+        refreshable-dataids: redis.yml,database.yml
+      discovery:
+        server-addr: 120.27.215.119:8848
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+
+server:
+  port: 6060

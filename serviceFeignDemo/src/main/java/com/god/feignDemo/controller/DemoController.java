@@ -1,8 +1,8 @@
-package com.god.demo.controller;
+package com.god.feignDemo.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.god.common.resp.ResponseCode;
-import com.god.demo.feign.DemoFeignApi;
+import com.god.feignDemo.feign.DemoFeignApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

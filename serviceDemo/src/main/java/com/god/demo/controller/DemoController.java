@@ -1,7 +1,9 @@
 package com.god.demo.controller;
 
 import com.god.common.resp.ResponseCode;
+import com.god.demo.service.DemoService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,10 +18,20 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class DemoController {
 
+    @Autowired
+    DemoService demoService;
+
     @RequestMapping("/test")
     public ResponseCode demo() {
         log.info("===>>>>进入test方法");
         return ResponseCode.success("test");
     }
 
+
+    @RequestMapping("/testRedis")
+    public ResponseCode testRedis() {
+        log.info("===>>>>testRedis");
+        String value = demoService.setKey();
+        return ResponseCode.success(value);
+    }
 }

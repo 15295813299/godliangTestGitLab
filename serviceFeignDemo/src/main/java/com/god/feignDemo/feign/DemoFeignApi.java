@@ -1,7 +1,6 @@
-package com.god.demo.feign;
+package com.god.feignDemo.feign;
 
 import com.god.common.resp.ResponseCode;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
