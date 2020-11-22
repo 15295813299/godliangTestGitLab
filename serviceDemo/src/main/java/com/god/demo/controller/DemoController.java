@@ -24,6 +24,7 @@ public class DemoController {
     @RequestMapping("/test")
     public ResponseCode demo() {
         log.info("===>>>>进入test方法");
+        testRedis();
         return ResponseCode.success("test");
     }
 

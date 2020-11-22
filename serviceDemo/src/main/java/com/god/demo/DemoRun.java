@@ -1,5 +1,6 @@
 package com.god.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -16,6 +17,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableDiscoveryClient
 @EnableFeignClients
 @ComponentScan(basePackages={"com.god.common", "com.god.demo"})
+@MapperScan("com.god.demo.mapper")
 public class DemoRun {
     public static void main(String[] args) {
         SpringApplication.run(DemoRun.class,args);
