@@ -11,7 +11,9 @@
     <modules>
         <module>common</module>
         <module>serviceDemo</module>
+        <module>entity</module>
         <module>serviceFeignDemo</module>
+        <module>micro_service</module>
     </modules>
 
     <!-- Spring Boot 启动父依赖 -->
