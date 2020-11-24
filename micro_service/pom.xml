@@ -17,11 +17,6 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.god</groupId>
-            <artifactId>entity</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
 
 

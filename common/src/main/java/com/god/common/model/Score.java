@@ -1,4 +1,4 @@
-package com.tzf.entity;
+package com.god.common.model;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
