@@ -10,9 +10,9 @@
     <version>1.0.0</version>
     <modules>
         <module>common</module>
-        <module>serviceDemo</module>
+        <module>gateway</module>
         <module>serviceFeignDemo</module>
-        <module>micro_service</module>
+        <module>demo2</module>
     </modules>
 
     <!-- Spring Boot 启动父依赖 -->
