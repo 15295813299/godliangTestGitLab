@@ -1,14 +1,14 @@
 
 spring:
   application:
-    name: demo
+    name: gateway
   cloud:
     nacos:
       config:
         server-addr: 120.27.215.119:8848
         file-extension: yml
-        shared-dataids: redis.yml,database.yml
-        refreshable-dataids: redis.yml,database.yml
+        shared-dataids: redis.yml
+        refreshable-dataids: redis.yml
       discovery:
         server-addr: 120.27.215.119:8848
 
@@ -16,6 +16,3 @@ logging:
   level:
     root: info
     org.springframework: info
-
-server:
-  port: 6060
