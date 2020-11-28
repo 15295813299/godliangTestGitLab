@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -17,9 +16,9 @@ import reactor.core.publisher.Mono;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class DemoRun {
+public class GatewayRun {
     public static void main(String[] args) {
-        SpringApplication.run(DemoRun.class,args);
+        SpringApplication.run(GatewayRun.class,args);
     }
     /**
      * 创建用户唯一标识：使用IP作为用户唯一标识，根据IP进行限流操作

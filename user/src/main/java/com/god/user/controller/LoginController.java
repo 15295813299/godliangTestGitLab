@@ -7,6 +7,7 @@ import com.god.common.utils.WechatNumberUtil;
 import com.god.user.service.LoginService;
 import com.god.user.service.impl.LoginServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,4 +35,8 @@ public class LoginController {
         return ResponseCode.error("注册失败");
     }
 
+    @GetMapping("/test")
+    public ResponseCode test(){
+        return ResponseCode.success("注册成功");
+    }
 }
