@@ -8,6 +8,7 @@ package com.god.common.constant;
  */
 public class ResponseCodeConstants {
 
+
     /**
      * 代表请求成功
      */
@@ -16,6 +17,7 @@ public class ResponseCodeConstants {
     /**
      * 代码请求异常
      */
+
     public static final int ERROR = 500;
 
 
