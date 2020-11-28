@@ -1,21 +1,14 @@
 package com.god.common.model;
 
-import lombok.Data;
-import lombok.experimental.Accessors;
-
 import java.io.Serializable;
+import lombok.Data;
 
 /**
- * (Login)实体类
- *
- * @author makejava
- * @since 2020-11-28 19:46:56
+ * login
+ * @author 
  */
 @Data
-@Accessors(chain = true)
 public class Login implements Serializable {
-    private static final long serialVersionUID = 958093265339982180L;
-
     private Integer id;
 
     private Integer usernamen;
@@ -30,7 +23,5 @@ public class Login implements Serializable {
 
     private Integer age;
 
-
-
-
+    private static final long serialVersionUID = 1L;
 }
