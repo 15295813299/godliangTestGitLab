@@ -12,7 +12,7 @@
         <module>common</module>
         <module>serviceDemo</module>
         <module>serviceFeignDemo</module>
-        <module>micro_service</module>
+        <module>user</module>
     </modules>
 
     <!-- Spring Boot 启动父依赖 -->
